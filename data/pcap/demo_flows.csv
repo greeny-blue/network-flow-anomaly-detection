@@ -1,0 +1,3 @@
+flow_id,src_ip,src_port,dst_ip,dst_port,protocol,packet_count,bytes_total,bytes_mean,bytes_std,bytes_min,bytes_max,iat_mean,iat_std,iat_min,iat_max,first_seen,last_seen,duration,tcp_fin_count,tcp_syn_count,tcp_rst_count,tcp_psh_count,tcp_ack_count,tcp_urg_count,tcp_ece_count,tcp_cwr_count
+127.0.0.1-59034-127.0.0.1-8000-tcp,127.0.0.1,59034,127.0.0.1,8000,tcp,7,548,78.28571428571429,29.13024937365674,66,144,5.0869000000000004e-05,6.918287683138558e-05,0.0,0.000199,0.0,0.006513709,0.006513709,1,1,0,1,6,0,0,0
+127.0.0.1-8000-127.0.0.1-59034-tcp,127.0.0.1,8000,127.0.0.1,59034,tcp,5,2139,427.8,720.4041921032942,66,1711,0.0012315252,0.002607064860774699,6.959e-06,0.00589475,6.8875e-05,0.006498542,0.006429667,1,1,0,2,5,0,0,0
