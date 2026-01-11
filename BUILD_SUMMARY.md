@@ -97,10 +97,18 @@ Both models show excellent separation on the synthetic dataset (without threshol
 
 A clear, documented Makefile was added with:
 
-- `make dataset` — generate synthetic dataset  
+- `make setup` - create virtual environment and install dependencies
+- `make demo` - run the full safe capture -> features pipeline
+- `make extract` - extract fields from any PCAP (wrapper for sharkout.sh)
+- `make aggregate`- aggregate a raw packet CSV into flow-level features
+- `make normal` - generate normal flows from local HTTP traffic
+- `make scan` - generate scan flows using a local nmap SYN scan
+- `make dataset` — generate synthetic dataset
+- `make clean` - remove demo files
+- `make reset` - clears all PCAP and CSV files
+- `make purge` — remove Python bytecode and cache dirs
 - `make train_iforest` — train and evaluate Isolation Forest  
-- `make train_svm` — train and evaluate One-Class SVM  
-- `make reset` / `make purge` — cleanup utilities  
+- `make train_ocsvm` — train and evaluate One-Class SVM  
 - `make help` — auto-documented command list  
 
 This provides a polished, developer-friendly interface for running the entire pipeline.
