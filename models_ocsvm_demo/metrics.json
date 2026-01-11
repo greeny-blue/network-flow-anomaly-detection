@@ -1,0 +1,23 @@
+{
+  "nu": 0.05,
+  "gamma_input": "scale",
+  "gamma_resolved": 0.13792,
+  "train_frac": 0.8,
+  "target_fpr": null,
+  "threshold": 0.0,
+  "counts": {
+    "tp": 4000,
+    "fp": 3,
+    "tn": 77,
+    "fn": 0,
+    "n_eval": 4080,
+    "n_train_normals": 320,
+    "n_holdout_normals": 80,
+    "n_anomalies": 4000
+  },
+  "metrics": {
+    "precision": 0.9992505620784412,
+    "recall": 1.0,
+    "f1": 0.9996251405722855
+  }
+}
