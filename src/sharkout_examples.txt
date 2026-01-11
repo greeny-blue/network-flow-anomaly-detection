@@ -1,0 +1,23 @@
+# 1) Use the default (your original set)
+./sharkout.sh ../data/pcap/normal.pcapng ../data/features/normal_raw.csv
+
+# 2) Pick a preset
+./sharkout.sh ../data/pcap/scan.pcapng ../data/features/scan_tcp.csv -p extended_tcp
+
+# 3) Custom fields inline
+./sharkout.sh ../data/pcap/normal.pcapng ../data/features/custom.csv \
+  -f "frame.time_relative,ip.src,ip.dst,tcp.flags,tcp.len"
+
+# 4) Load fields from a file (one per line, comments allowed)
+./sharkout.sh ../data/pcap/normal.pcapng ../data/features/fromfile.csv \
+  -F ../src/fields.txt
+
+# 5) Apply a display filter (only TCP or UDP)
+./sharkout.sh ../data/pcap/normal.pcapng ../data/features/filtered.csv \
+  -Y "tcp || udp"
+
+# 6) List presets or search all available tshark fields
+./sharkout.sh anything out.csv --list-presets
+./sharkout.sh anything out.csv --search-fields "tcp.flags"
+./sharkout.sh anything out.csv --list-fields > all_fields.txt
+

@@ -1,0 +1,6 @@
+# Basic
+python src/pcap2features.py data/features/normal_raw.csv data/features/normal_flows.csv
+
+# With a quick summary to stdout
+python src/pcap2features.py data/features/scan_raw.csv data/features/scan_flows.csv --summary
+
