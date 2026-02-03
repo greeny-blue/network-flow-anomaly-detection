@@ -45,7 +45,7 @@ Key outputs include:
 
 ---
 
-## Build & Pipeline
+## Build & pipeline
 
 In addition to analysis notebooks, this project includes an end-to-end build pipeline for turning raw PCAP data into structured flow-level features and training lightweight one-class anomaly detectors.
 
