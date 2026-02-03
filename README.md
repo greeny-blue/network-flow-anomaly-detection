@@ -3,6 +3,7 @@
 ## Overview
 
 This project explores anomaly detection techniques applied to synthetic network flow data, motivated by defensive monitoring and SOC-style analysis.  
+
 The emphasis is on evaluation behaviour, calibration, and interpretability rather than maximising model performance.
 
 Synthetic data is used throughout to allow controlled experimentation and clear reasoning about model behaviour.
