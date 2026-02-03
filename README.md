@@ -31,6 +31,7 @@ This project focuses on understanding those behaviours explicitly.
 ## Repository contents
 
 - Jupyter notebooks for data generation, modelling and evaluation
+  - **[Workbook](https://github.com/greeny-blue/network-flow-anomaly-detection/blob/main/notebooks/Anomaly%20detection%20in%20network%20flows%20WORKBOOK.ipynb)**
 - Utility functions for reproducible experiments
 - Figures illustrating detector behaviour and calibration
 
